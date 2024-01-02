@@ -133,7 +133,7 @@ def run_app(clf_xgb):
     else:
         st.write('Admitted')
     st.subheader('Prediction Probability')
-    st.write(1-prediction_proba)
+    st.write(prediction_proba)
 
 if __name__ == '__main__':
     run_app(clf_xgb)
