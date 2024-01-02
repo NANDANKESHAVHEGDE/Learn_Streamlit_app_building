@@ -13,6 +13,7 @@ from xgboost import XGBClassifier
 import pickle
 import warnings
 warnings.filterwarnings("ignore")
+import os
 
 # # Data Generation
 
@@ -102,8 +103,10 @@ def user_input_features():
 
 def run_app(clf_xgb):
     st.write("""
-    # Admit Predictor for MS in Applied Data Science
+    # Admit Predictor for MS in Applied Data Science  
     This app generously predicts the probability of admit based on custom input parameters
+    
+    [*Click here to view the code for the app*](https://github.com/NANDANKESHAVHEGDE/Learn_Streamlit_app_building)
     """)
     # Get Input
     st.header('User Input Parameters')
